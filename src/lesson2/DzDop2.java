@@ -14,16 +14,14 @@ public class DzDop2 {
         srok = s1.nextInt();
         System.out.print("Введите сумму вклада: ");
         summa = s1.nextFloat();
-        for (int i=1; i<=srok; i++) {
-            float summa_mes = summa * stavka  / 100;
+        for (int i = 1; i <= srok; i++) {
+            float summa_mes = summa * stavka / 100;
             procenty = procenty + summa_mes;
-            System.out.println("% за месяц "+ i + ": " + summa_mes);
+            System.out.println("% за месяц " + i + ": " + summa_mes);
             summa = summa + summa_mes;
         }
         vsego = procenty + summa;
         System.out.println("Итого процентов за вксь срок: " + procenty);
         System.out.println("Итого сумма за весь срок с учетом %: " + vsego);
-
-
     }
 }
