@@ -9,11 +9,7 @@ public class L3Zad1 {
         int b = 0;
         int a;
         System.out.print("Enter number: ");
-        if (sc1.hasNextInt()) {
-            a = sc1.nextInt();
-        } else {
-            System.out.print("number incorrect!!!");
-        }
+        a = sc1.nextInt();
         for (int i = 0; i < array1.length; i++) {
             if (array1[i] == a) {
                 System.out.print("number in array1!!!" + b);
