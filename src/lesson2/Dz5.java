@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Dz5 {
     public static void main(String[] args) {
         System.out.print("Введите число от 1 до 4: ");
-        int cvet;
+        int color;
         Scanner s5 = new Scanner(System.in);
-        cvet=s5.nextInt();
-        switch (cvet) {
+        color=s5.nextInt();
+        switch (color) {
             case 1:
                 System.out.print("Красный");
                 break;
@@ -31,7 +31,7 @@ public class Dz5 {
                 System.out.print("Фиолетовый");
                 break;
             default:
-                System.out.print("Incorrect cvet");
+                System.out.print("Incorrect color");
         }
     }
 }
