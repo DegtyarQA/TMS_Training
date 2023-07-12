@@ -1,20 +1,32 @@
 package Lesson4;
 
+import java.util.Random;
+
 public class CreditCard {
 
     String account_number;
     float balance;
 
-    float BalanceUp (float cashin) {
-       balance = balance + cashin;
-       return balance;
+    CreditCard(float balance) {
+        balance = balance;
+        account_number = "AKZ11110000000000000";
     }
-    float  BalanceDown (float expenses) {
-        balance = balance - expenses;
+
+    CreditCard() {
+
+    }
+
+    float BalanceUp(float cashin) {
+        balance = balance + cashin;
         return balance;
     }
+
+    void BalanceDown(float expenses) {
+        balance = balance - expenses;
+        //return balance;
+    }
+
     void CardInfo() {
-        System.out.println(account_number);
-        System.out.println(balance);
+        System.out.println("Balance card " + account_number + " is : " + balance);
     }
 }
