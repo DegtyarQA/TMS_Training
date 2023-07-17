@@ -25,15 +25,12 @@ public class PhoneProgram {
         p2.getNumber();
         p3.getNumber();
         //Создаем конструктором, в конструкторе из трех параметров вызываем с двумя
-        Phone p4 = new Phone("+375443457654","LG", 145f);
+        Phone p4 = new Phone("+375443457654", "LG", 145f);
         Phone p5 = new Phone("+375331234321", "Sony", 213f);
         Phone p6 = new Phone("+375447896543", "huawei", 230f);
         p4.receiveCall("Ihar", p1.getNumber());
         p5.receiveCall("Alex", p2.getNumber());
         p6.receiveCall("Maxim", p3.getNumber());
         p1.sendMessage("+375331230050", "+375441230050", "+375331230050", "+375291233333", "+375291236666", "+375291237777", "+375291232222");
-
-
-
     }
 }
