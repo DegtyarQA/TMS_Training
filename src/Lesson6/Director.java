@@ -1,8 +1,8 @@
 package Lesson6;
 
 public class Director implements PrintJob {
-    final String name = "Petrov Kolya";
-    final String job_title = "Director";
+    private final String name = "Petrov Kolya";
+    private final String job_title = "Director";
 
     public Director()
     {

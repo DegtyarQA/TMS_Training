@@ -1,8 +1,8 @@
 package Lesson6;
 
 public class Circle extends Figure {
-    final double pi = 3.1415926536;
-    double r;
+    private final double pi = 3.1415926536;
+    private double r;
 
     public Circle(double r) {
         this.r = r;

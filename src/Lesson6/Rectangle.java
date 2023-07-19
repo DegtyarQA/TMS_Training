@@ -1,8 +1,8 @@
 package Lesson6;
 
 public class Rectangle extends Figure {
-    double a;
-    double b;
+    private double a;
+    private double b;
 
     public Rectangle(double a, double b) {
         this.a = a;

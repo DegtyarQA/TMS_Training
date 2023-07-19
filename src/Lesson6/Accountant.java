@@ -1,8 +1,8 @@
 package Lesson6;
 
 public class Accountant implements PrintJob {
-    final  String name = "Frolov Andrei";
-    final String job_title = "Accountant";
+     private final  String name = "Frolov Andrei";
+     private final String job_title = "Accountant";
 
     public Accountant()
     {

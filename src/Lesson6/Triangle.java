@@ -3,10 +3,10 @@ package Lesson6;
 import static java.lang.Math.sqrt;
 
 public class Triangle extends Figure {
-    double a;
-    double b;
-    double c;
-    double h;
+    private double a;
+    private double b;
+    private double c;
+    private double h;
 
     public Triangle(double a, double b, double c) {
         this.a = a;
