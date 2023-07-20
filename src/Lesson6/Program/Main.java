@@ -4,6 +4,8 @@ import Lesson6.Doctype1.ProductContract;
 import Lesson6.Doctype2.EmployeeContract;
 import Lesson6.Doctype3.FinancialInvoice;
 import Lesson6.Documents.DocumentAll;
+import Lesson6.Registr.Registr;
+
 import java.util.Date;
 
 public class Main {
@@ -15,8 +17,11 @@ public class Main {
         DocumentAll doc1 = new EmployeeContract("OT0101", date, 2, end_date,"Ivan");
         DocumentAll doc2 = new ProductContract("BBD0015", date0, 1, "pharm", 15);
         DocumentAll doc3 = new FinancialInvoice("BL0023", date1, 3, 43434.45f);
-        System.out.println(doc1.getDate());
-        System.out.println(doc2.getDate());
-        System.out.println(doc3.getDate());
+        Registr registr = new Registr();
+        registr.addToRegister(doc1);
+        registr.addToRegister(doc2);
+        registr.addToRegister(doc3);
+
+
     }
 }

@@ -11,7 +11,6 @@ public class ProductContract extends DocumentAll {
     public ProductContract()
     {
     }
-
     public ProductContract(String number, Date date, int type, String type_product, int quantity) {
         super(number, date, type);
         this.type_product = type_product;
@@ -32,5 +31,13 @@ public class ProductContract extends DocumentAll {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
+    }
+
+    @Override
+    public String toString() {
+        return "ProductContract{" +
+                "type_product='" + type_product + '\'' +
+                ", quantity=" + quantity +
+                '}';
     }
 }

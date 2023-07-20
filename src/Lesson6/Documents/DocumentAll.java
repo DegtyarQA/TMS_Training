@@ -40,4 +40,13 @@ public abstract class DocumentAll {
     public int getType() {
         return type;
     }
+
+    @Override
+    public String toString() {
+        return "DocumentAll{" +
+                "number='" + number + '\'' +
+                ", date=" + date +
+                ", type=" + type +
+                '}';
+    }
 }
