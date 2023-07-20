@@ -36,7 +36,7 @@ public class ProductContract extends DocumentAll {
     @Override
     public String toString() {
         return "ProductContract{" +
-                "type_product='" + type_product + '\'' +
+                "type_product='" + type_product + '\'' + //Можно сделать так чтобы метод подтягивал в том числе и поля родительского класса?
                 ", quantity=" + quantity +
                 '}';
     }
