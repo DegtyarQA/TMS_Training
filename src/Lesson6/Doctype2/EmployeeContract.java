@@ -19,10 +19,12 @@ public class EmployeeContract extends DocumentAll {
     }
 
     public Date getEnd_date() {
+
         return end_date;
     }
 
     public String getName() {
+
         return name;
     }
 
@@ -31,7 +33,16 @@ public class EmployeeContract extends DocumentAll {
     }
 
     public void setName(String name) {
+
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "EmployeeContract{" +
+                "end_date=" + end_date +
+                ", name='" + name + '\'' +
+                '}' + super.toString();
     }
 }
 

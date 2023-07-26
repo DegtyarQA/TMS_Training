@@ -12,13 +12,13 @@ public class Registr {
     public void addToRegister(DocumentAll documentAll) {
         arrayDoc[i] = documentAll;
         i++;
-        //System.out.println(Arrays.deepToString(arrayDoc));
+        System.out.println(Arrays.deepToString(arrayDoc));
     }
 
-    public void infodoc(int docnum) {
+    public void infoDoc(int docnum) {
         for (int j = 0; j < arrayDoc.length; j++) {
             if (arrayDoc[j].getType() == docnum) {
-                // System.out.println(Arrays.deepToString(arrayDoc[i])); //Как вывести?
+                System.out.println(arrayDoc[j]); //Как вывести?
             }
         }
     }

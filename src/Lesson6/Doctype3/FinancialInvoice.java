@@ -15,5 +15,10 @@ public class FinancialInvoice extends DocumentAll {
         this.summ = summ;
     }
 
-
+    @Override
+    public String toString() {
+        return "FinancialInvoice{" +
+                "summ=" + summ +
+                '}' + super.toString();
+    }
 }

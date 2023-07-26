@@ -7,6 +7,7 @@ import Lesson6.Documents.DocumentAll;
 import Lesson6.Registr.Registr;
 
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,6 +22,10 @@ public class Main {
         registr.addToRegister(doc1);
         registr.addToRegister(doc2);
         registr.addToRegister(doc3);
+        Scanner s1 = new Scanner(System.in);
+        System.out.println("Enter docnumber: ");
+        int docnum = s1.nextInt();
+        registr.infoDoc(docnum);
 
 
     }
